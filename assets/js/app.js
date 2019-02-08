@@ -1,4 +1,4 @@
-console.log("v1.403"); //this is updated so you can see when GitHub has actually deployed your code. This is necessary for testing stuff with CORS limitations (like Google Maps)
+console.log("v1.404"); //this is updated so you can see when GitHub has actually deployed your code. This is necessary for testing stuff with CORS limitations (like Google Maps)
 
 var map;
 var userLatitude;
@@ -309,22 +309,22 @@ $(document).ready(function () {
         console.log("entries-error: " + errorObject.code);
     });
 
-    database.ref(userRestaurantPath).on("value", function (snapshot) {
-        // const selectedRestLoc = {};
-        console.log("restaurant snapshot on next line...");
-        console.log(snapshot.val());
-        var restaurantName = snapshot.child(userRestaurantPath + "/name").val();
-        var restaurantLat = snapshot.child(userRestaurantPath + "/restaurantLat").val();
-        var restaurantLong = snapshot.child(userRestaurantPath + "/restaurantLong").val();
-        // selectedRestLoc.lat = restaurantLat;
-        // selectedRestLoc.lng = restaurantLong;
-        // console.log(selectedRestLoc);
-        // moviesArray = getData(selectedRestLoc);
-        // console.log(moviesArray);
+    // database.ref(userRestaurantPath).on("value", function (snapshot) {
+    //     // const selectedRestLoc = {};
+    //     console.log("restaurant snapshot on next line...");
+    //     console.log(snapshot.val());
+    //     var restaurantName = snapshot.child(userRestaurantPath + "/name").val();
+    //     var restaurantLat = snapshot.child(userRestaurantPath + "/restaurantLat").val();
+    //     var restaurantLong = snapshot.child(userRestaurantPath + "/restaurantLong").val();
+    //     // selectedRestLoc.lat = restaurantLat;
+    //     // selectedRestLoc.lng = restaurantLong;
+    //     // console.log(selectedRestLoc);
+    //     // moviesArray = getData(selectedRestLoc);
+    //     // console.log(moviesArray);
 
-        console.log("RESTAURANT INFO name" + restaurantName + " lat: " + restaurantLat + "long: " + restaurantLong);
-        // getLatLongFromVenueName(moviesArray);
-    });
+    //     console.log("RESTAURANT INFO name" + restaurantName + " lat: " + restaurantLat + "long: " + restaurantLong);
+    //     // getLatLongFromVenueName(moviesArray);
+    // });
     //#endregion
 
     //#region - yelp
