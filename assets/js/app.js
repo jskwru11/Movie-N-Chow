@@ -233,8 +233,8 @@ $(document).ready(function () {
         console.log("src: " + restaurantPic);
         var restaurantName = $(this).children(".restaurant-name").text();
         console.log("name: " + restaurantName);
-        selectedRestLoc.lat = restaurantLat;
-        selectedRestLoc.lng = restaurantLong;
+        selectedRestLoc.lat = restaurantLatitude;
+        selectedRestLoc.lng = restaurantLongitude;
         console.log(selectedRestLoc);
         moviesArray = getData(selectedRestLoc);
         console.log(moviesArray);
